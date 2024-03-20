@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>        
+        function ChangeColor(){
+            var bien = document.f1.txt1.value;           
+            document.bgColor = bien;      
+        }
+    </script>
+</head>
+<body onload="document.f1.txt1.focus()">
+    <form action="" name="f1">
+        <input type="text" name="txt1" value="">
+        <input type="button" value="ChangeColor" onclick="ChangeColor()">        
+    </form>
+    <button name="bt1" value="ChangeColor" onclick="ChangeColor()" >Ok</button>    
+</body>
+</html>

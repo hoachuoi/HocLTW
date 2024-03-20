@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Inhoa(){
+            var st = document.f1.t1.value            
+            document.f1.t1.value = st.toUpperCase()
+        } 
+    </script>
+</head>
+<body onload="document.f1.t1.focus()">
+    <form action="" name =f1 method="">
+        <input type="text" name="t1" onblur="Inhoa()">
+    </form>
+</body>
+</html>
