@@ -1,0 +1,100 @@
+/* Các phần tử cơ bản */
+.wd-top-header {
+    overflow: hidden;
+    background-color: #333; /* Màu nền */
+    color: #fff; /* Màu chữ */
+}
+
+.wd-top-left,
+.wd-top-right {
+    float: left; /* Dàn trải phần tử trái và phải */
+}
+
+.wd-top-left ul,
+.wd-top-right ul {
+    list-style-type: none; /* Xóa dấu đầu dòng của danh sách */
+    padding: 0; /* Xóa khoảng cách trong danh sách */
+}
+
+/* Liên kết */
+.wd-top-left ul li,
+.wd-top-right ul li {
+    float: left; /* Sắp xếp theo chiều ngang */
+}
+
+.wd-top-left ul li a,
+.wd-top-right ul li a {
+    display: block; /* Biến nội dung của liên kết thành khối */
+    color: #fff; /* Màu chữ */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 14px 16px; /* Kích thước đệm của liên kết */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.wd-top-left ul li a:hover,
+.wd-top-right ul li a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua */
+}
+
+/* Ngôn ngữ */
+.wd-component.wd-languageNormal {
+    float: right; /* Dàn phải */
+    margin-top: 10px; /* Khoảng cách từ trên xuống */
+}
+
+.wd-select-language {
+    display: inline-block; /* Hiển thị dạng khối */
+    color: #fff; /* Màu chữ */
+}
+
+.wd-select-language a {
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+/* Menu Khoa và Phòng */
+.wd-list-menu-r,
+.wd-list-menu-r ul,
+.wd-content-list-category-menu {
+    list-style-type: none; /* Xóa dấu đầu dòng của danh sách */
+    margin: 0; /* Xóa lề */
+    padding: 0; /* Xóa khoảng cách trong danh sách */
+}
+
+.wd-list-menu-r > li,
+.wd-content-list-category-menu > li {
+    position: relative; /* Tạo vị trí tương đối */
+}
+
+.wd-list-menu-r > li > a,
+.wd-content-list-category-menu > li > a {
+    display: block; /* Biến nội dung của liên kết thành khối */
+    padding: 12px 16px; /* Kích thước đệm của liên kết */
+    color: #fff; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.wd-list-menu-r ul,
+.wd-content-list-category-menu {
+    display: none; /* Ẩn danh sách con */
+    position: absolute; /* Vị trí tuyệt đối */
+    background-color: #333; /* Màu nền */
+    min-width: 160px; /* Chiều rộng tối thiểu */
+    z-index: 1; /* Chỉ số sâu */
+}
+
+.wd-list-menu-r ul li,
+.wd-content-list-category-menu li {
+    padding: 12px 16px; /* Kích thước đệm của mục danh sách */
+    text-align: left; /* Căn trái */
+}
+
+.wd-list-menu-r ul li a,
+.wd-content-list-category-menu li a {
+    color: #fff; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.wd-list-menu-r li:hover > ul,
+.wd-content-list-category-menu li:hover > ul {
+    display: block; /* Hiển thị danh sách con khi di chuột qua */
+}
