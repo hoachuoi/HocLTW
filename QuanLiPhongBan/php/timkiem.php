@@ -7,8 +7,10 @@
 </head>
 
 <body>
+    <button  onclick="window.location.href = 'home1.php'">Home</button><br>
     <div>
         <form method="post" action="XuliTimKiem.php">
+            
             <input type="radio" id="radio" name="radio" value="Hoten">
             <label for="Hoten">Họ tên</label>
             <input type="radio" id="radio" name="radio" value="Idnv">

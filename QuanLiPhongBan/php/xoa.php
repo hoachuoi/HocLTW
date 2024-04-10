@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
 // Lấy dữ liệu từ bảng nhanvien
 $sql = "SELECT * FROM nhanvien";
 $result = mysqli_query($link, $sql);
+echo '<a href="home1.php">Home</a>';
 
 // Hiển thị bảng dữ liệu
 echo '<form method="post">';

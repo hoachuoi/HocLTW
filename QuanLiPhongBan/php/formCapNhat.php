@@ -15,6 +15,7 @@
             $row =mysqli_fetch_array($result, MYSQLI_ASSOC);
 ?>         
 <body>
+    <button  onclick="window.location.href = 'home1.php'">Home</button><br>
     <div>
         <form action="XuLiCapNhat.php?IDPB=<?php echo $row['IDPB']; ?>" method="post">
             <label for="IDPB">IDPB</label>

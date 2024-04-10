@@ -17,6 +17,7 @@ if(isset($_GET['IDPB'])) {
 //$sql="select * from nhanvien";
 
 $result = mysqli_query($link, $sql);
+echo '<a href="home1.php">Home</a>';
 #$result = msqli_query("select * from nhanvien");
 echo '<table border ="1" width ="100%">';
 echo '<caption> Du lieu truy xuat tu bang nhan vien</caption>';
