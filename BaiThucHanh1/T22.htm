@@ -1,0 +1,38 @@
+<html>
+    <style>
+        body {
+       background-color: #aa3378; /* sử dụng mã màu */
+   }
+    </style>
+<head>
+    <title>Frame 2</title>
+    <script>
+        function changeFrameContent(content) {
+            // Thay đổi src của frame3 để hiển thị nội dung tương ứng với mục được chọn
+            if (content === 'Muc1') {
+                parent.frame3.location.href = 'form1.htm';
+            } else if (content === 'Muc2') {
+                parent.frame3.location.href = 'form2.htm';
+            } else if (content === 'Muc3') {
+                parent.frame3.location.href = 'form3.htm';
+            }else if (content === 'Muc4') {
+                parent.frame3.location.href = 'form4.htm';
+            }else if (content === 'Muc5') {
+                parent.frame3.location.href = 'form5.htm';
+            }else if (content === 'Trangchu') {
+                parent.frame3.location.href = 'T3.htm';
+             } 
+            }
+    </script>
+</head>
+<body  topmargin="10">  
+        <ul>
+            <li><a href="javascript:void(0);" onclick="changeFrameContent('Trangchu')">Trang chu</a></li>
+            <li><a href="javascript:void(0);" onclick="changeFrameContent('Muc1')">Muc 1</a></li>
+            <li><a href="javascript:void(0);" onclick="changeFrameContent('Muc2')">Muc 2</a></li>
+            <li><a href="javascript:void(0);" onclick="changeFrameContent('Muc3')">Muc 3</a></li>
+            <li><a href="javascript:void(0);" onclick="changeFrameContent('Muc4')">Muc 4</a></li>
+            <li><a href="javascript:void(0);" onclick="changeFrameContent('Muc5')">Muc 5</a></li>
+        </ul>
+</body>
+</html>
