@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form55</title>
+
+    <script language="JavaScript">
+        function Select()
+        {
+            var bien = document.f1.s1.selectedIndex
+            document.f1.t1.value = bien;
+        }
+    </script>
+</head>
+
+
+<body onLoad="document.f1.t1.focus()">
+    <form action="" name="f1">
+        <select name="s1">
+            <option> Index 0> </option>
+            <option> Index 1> </option>
+            <option> Index 2> </option>
+            <option> Index 3> </option>
+        </select>
+        <input type="text" name="t1" readonly>
+        <input type="button" value="Click here" name="b1" onclick="Select()">
+    </form>
+
+</body>
+
+</html>
