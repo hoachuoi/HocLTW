@@ -19,7 +19,7 @@
     <div>
         <form action="XuLiCapNhat.php?IDPB=<?php echo $row['IDPB']; ?>" method="post">
             <label for="IDPB">IDPB</label>
-            <input type="text" name ='IDPB' readonly value =<?php echo $row['IDPB']; ?> required>
+            <input type="text" name ='IDPB' readonly value =<?php echo $row['IDPB']; ?> >
             <label for="tenPB">Tên phòng ban</label>
             <input type="text" name ='tenPB' required>
             <label for="MoTa">Mô tả</label>

@@ -12,9 +12,11 @@
             
             // Khởi tạo mảng để lưu trữ IDNV
             $idnvArray = array();
+            $idpbArr = array();
             // Lặp qua các hàng kết quả và lưu IDNV vào mảng
             while ($row = mysqli_fetch_assoc($result)) {
                 $idnvArray[] = $row['IDNV'];
+                $idpbArr[] = $row['IDPB'];
             }
 ?>  
 <script>
@@ -37,7 +39,7 @@
             <input type="text" name ='tenNV' required>
 
             <label for="IDPB">Phòng ban</label>
-            <input type="text" name ='IDPB' required>
+            <input type="" name ='IDPB' required>
 
             <label for="Diachi">Địa chỉ</label>
             <input type="text" name ='Diachi' required>

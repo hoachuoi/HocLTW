@@ -14,8 +14,7 @@ if($idpb =="" || $tenPB=="" || $MoTa==""){
     $sql = "UPDATE phongban SET Tenpb = '$tenPB', Mota = '$MoTa' WHERE IDPB = '$idpb'";
     
     if(mysqli_query($link,$sql)=== True){
-        echo "cap nhat thanh cong";
-        header("Location:formCapNhat.php");
+        header("Location:CapNhat.php");
     } else echo "loiiiii!";
    
 
